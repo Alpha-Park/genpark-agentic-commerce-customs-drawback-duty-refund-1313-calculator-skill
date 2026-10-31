@@ -1,0 +1,41 @@
+{
+  "name": "genpark-agentic-commerce-customs-drawback-duty-refund-1313-calculator-skill",
+  "version": "1.0.0",
+  "description": "US 19 U.S.C. 1313 unused merchandise and manufacturing duty drawback 99% refund recovery engine.",
+  "category": "agentic_commerce",
+  "author": "GenPark AI",
+  "website": "https://www.genpark.ai",
+  "linkedin": "https://www.linkedin.com/company/92955550",
+  "main": "skills.py",
+  "tools": [
+    {
+      "name": "calculate_customs_drawback_refund",
+      "description": "US 19 U.S.C. 1313 unused merchandise and manufacturing duty drawback 99% refund recovery engine.",
+      "sample_input": {
+        "import_entries": [
+          {
+            "entry_number": "CBP-981-1",
+            "duties_paid": 45000.0,
+            "mpf_paid": 575.35,
+            "hmf_paid": 140.0,
+            "elapsed_years_since_import": 1.5
+          },
+          {
+            "entry_number": "CBP-981-2",
+            "duties_paid": 28500.0,
+            "mpf_paid": 450.0,
+            "hmf_paid": 95.0,
+            "elapsed_years_since_import": 2.1
+          }
+        ],
+        "export_entries": [
+          {
+            "export_bill_of_lading": "MEDU918274",
+            "exported_value": 110000.0
+          }
+        ],
+        "drawback_type": "1313_J_UNUSED_MERCHANDISE"
+      }
+    }
+  ]
+}
